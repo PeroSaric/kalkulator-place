@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kalkulator plaće</title>
 </head>
 <body>
@@ -12,19 +13,29 @@
 
             <h2>Satnica u KM</h2>
             <input id="satnica">
+            
 
             <h2>Broj sati</h2>
-            <input id="sati">
-            <button class="izracunaj" onclick="satiPutaSatnica()">Izračunaj</button>
-            
-            <h2>Prekovremeni</h2>
-            <input id="prekovremeni">
-            <button class="izracunajPrekovremene" onclick="prekovremeni()">Izračunaj prekovremene</button>
-            
-            <h2>Radnih dana</h2>
-            <input id="broj-radnih-dana">
+            <input id="sati"> <br>
+            <button class="izracunaj" onclick="satiPutaSatnica()">Izračunaj osnovicu</button>
+            <p>Osnovica plaće:</p>
+            <p id="demo"></p>
 
-            <button class="ukupno" onclick="putniObrok()">UKUPNO</button>
+            <h2>Prekovremeni</h2>
+            <input id="prekovremeni"> <br>
+            <button class="izracunajPrekovremene" onclick="prekovremeni()">Izračunaj prekovremene</button>
+            <p>Prekovremeni:</p>
+            <p id="demo1"></p>
+
+            <h2>Radnih dana</h2>
+            <input id="broj-radnih-dana"> <br>
+            <p>Topli obrok i putni troškovi:</p>
+            <p id="demo2"></p>
+            
+            <p id="demo3"></p>
+            <button class="ukupno" onclick="ukupnaPlaca()">UKUPNA PLAĆA</button>
+
+            
         </div>
 
         
